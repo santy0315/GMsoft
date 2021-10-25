@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gmsoft-4fdec": {
+      "hosting": {
+        "GMsoft": [
+          "gmsoft-4fdec"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gmsoft-4fdec"
+  }
+}

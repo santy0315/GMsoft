@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "GMsoft:build:production",
+            "firebaseProject": "gmsoft-4fdec",
+            "firebaseHostingSite": "gmsoft-4fdec"
+          }
         }
       }
     }
