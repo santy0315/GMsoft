@@ -25,6 +25,11 @@
         </tr>
       </tbody>
     </table>
+     <ul>
+       <li class="text" *ngFor="let item of listaCosas | async">
+          {{item.nombre}}
+       </li>
+     </ul>
   </div>
 </div>
 </div>

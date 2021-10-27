@@ -1,3 +1,6 @@
+import { NuevoEstudianteComponent } from './componentsEst/nuevo-estudiante/nuevo-estudiante.component';
+import { NavbarEstComponent } from './componentsEst/navbar-est/navbar-est.component';
+import { ListaEstudiantesComponent } from './componentsEst/lista-estudiantes/lista-estudiantes.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListaCosasComponent } from './components/lista-cosas/lista-cosas.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -15,9 +18,14 @@ const routes: Routes = [
   { path: 'email-login', component: EmailComponent },
   { path: 'signup', component: SignUppageComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'lista-cosas', component: ListaCosasComponent},
-  { path: 'nav-bar', component: NavbarComponent},
-  { path: 'nueva-cosa', component: NuevaCosaComponent}
+  { path: 'lista-cosas', component: ListaCosasComponent },
+  { path: 'nav-bar', component: NavbarComponent },
+  { path: 'nueva-cosa', component: NuevaCosaComponent },
+
+  { path: 'lista-estudiantes', component: ListaEstudiantesComponent },
+  { path: 'nav-bar', component: NavbarEstComponent },
+  { path: 'nuevo-estudiante', component: NuevoEstudianteComponent }
+
 
 ];
 

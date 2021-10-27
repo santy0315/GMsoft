@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -19,6 +19,10 @@ import { EmailComponent } from './email/email.component';
 import { ListaCosasComponent } from './components/lista-cosas/lista-cosas.component';
 import { NuevaCosaComponent } from './components/nueva-cosa/nueva-cosa.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ListaEstudiantesComponent } from './componentsEst/lista-estudiantes/lista-estudiantes.component';
+import { NuevoEstudianteComponent } from './componentsEst/nuevo-estudiante/nuevo-estudiante.component';
+import { NavbarEstComponent } from './componentsEst/navbar-est/navbar-est.component';
+
  // Copy the firebaseConfig from your created project on the firebase console. Here, click on the project name and then on the project dashboard, click on Add firebase to your web app. Replace the values below with yours, values below will not work for you because I have removed some characters from it.
  const firebaseConfig = {
   apiKey: "AIzaSyDzj8o4rP45C5QpPhh2fAEaurxiS9fGJFc",
@@ -42,14 +46,19 @@ ProfileComponent,
 EmailComponent,
 ListaCosasComponent,
 NuevaCosaComponent,
-NavbarComponent
+NavbarComponent,
+ListaEstudiantesComponent,
+NuevoEstudianteComponent,
+NavbarEstComponent,
+
 ],
 imports: [
   BrowserModule,
   FormsModule,
   AngularFireModule.initializeApp(firebaseConfig),
   AngularFireAuthModule,
-  AppRoutingModule
+  AppRoutingModule,
+  ReactiveFormsModule
 ],
 providers: [],
 bootstrap: [AppComponent]

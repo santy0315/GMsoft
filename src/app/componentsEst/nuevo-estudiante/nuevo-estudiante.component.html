@@ -1,23 +1,23 @@
-<app-navbar></app-navbar>
+<app-navbar-est></app-navbar-est>
 <div class="container pt-4">
   <div class="row">
     <div class="col col-lg-6 offset-lg-3">
       <div class="card text-center">
         <div class="card-body">
-          <h3>Agregar empleado</h3>
-          <span style="color: black;" *ngIf="enviado && createCosa.invalid "> Todos los campos son requeridos. </span>
-          <form action="" [formGroup]="createCosa" (ngSubmit)="agregarCosa()">
+          <h3>Agregar Estudiante</h3>
+          <span style="color: black;" *ngIf="enviado && createEstudiante.invalid "> Todos los campos son requeridos. </span>
+          <form action="" [formGroup]="createEstudiante" (ngSubmit)="agregarEstudiante()">
             <div class="row">
               <div class="col">
                 <input class="form-control" type="text" formControlName="nombre" placeholder="Nombre">
               </div>
               <div class="col">
-                <input class="form-control" type="number" formControlName="cantidad" placeholder="Cantidad">
+                <input class="form-control" type="number" formControlName="edad" placeholder="edad">
               </div>
             </div>
             <div class="mt-3">
               <button type="text" class="btn btn-primary" style="margin-right: 5px;"
-                routerLink="/lista-cosas">Volver</button>
+                routerLink="/lista-estudiantes">Volver</button>
               <button type="submit" class="btn btn-primary">Guardar</button>
             </div>
           </form>

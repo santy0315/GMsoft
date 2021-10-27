@@ -1,0 +1,37 @@
+<app-navbar-est></app-navbar-est>
+
+<div class="container mt-4">
+<div class="card">
+  <div class="card-body">
+    <span class="h3">
+      Estudiantes
+    </span>
+    <button type="button" routerLink="/nuevo-estudiante">Nuevo</button>
+    <table class="table mt-5 table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan</td>
+          <td>28</td>
+          <td>
+            <li class="fas fa-edit fa-lg text-info" style="margin-right: 5px;"></li>
+            <li class="fas fa-trash-alt fa-lg text-danger"></li>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li class="text" *ngFor="let item of listaEstudiantes | async">
+        {{item.nombre}}
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
