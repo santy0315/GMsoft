@@ -22,6 +22,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListaEstudiantesComponent } from './componentsEst/lista-estudiantes/lista-estudiantes.component';
 import { NuevoEstudianteComponent } from './componentsEst/nuevo-estudiante/nuevo-estudiante.component';
 import { NavbarEstComponent } from './componentsEst/navbar-est/navbar-est.component';
+import { ListaProfesoresComponent } from './componentsPro/lista-profesores/lista-profesores.component';
+import { NuevoProfesorComponent } from './componentsPro/nuevo-profesor/nuevo-profesor.component';
+import { NavbarProComponent } from './componentsPro/navbar-pro/navbar-pro.component';
 
  // Copy the firebaseConfig from your created project on the firebase console. Here, click on the project name and then on the project dashboard, click on Add firebase to your web app. Replace the values below with yours, values below will not work for you because I have removed some characters from it.
  const firebaseConfig = {
@@ -50,6 +53,9 @@ NavbarComponent,
 ListaEstudiantesComponent,
 NuevoEstudianteComponent,
 NavbarEstComponent,
+ListaProfesoresComponent,
+NuevoProfesorComponent,
+NavbarProComponent,
 
 ],
 imports: [

@@ -1,3 +1,6 @@
+import { NuevoProfesorComponent } from './componentsPro/nuevo-profesor/nuevo-profesor.component';
+import { NavbarProComponent } from './componentsPro/navbar-pro/navbar-pro.component';
+import { ListaProfesoresComponent } from './componentsPro/lista-profesores/lista-profesores.component';
 import { NuevoEstudianteComponent } from './componentsEst/nuevo-estudiante/nuevo-estudiante.component';
 import { NavbarEstComponent } from './componentsEst/navbar-est/navbar-est.component';
 import { ListaEstudiantesComponent } from './componentsEst/lista-estudiantes/lista-estudiantes.component';
@@ -24,7 +27,11 @@ const routes: Routes = [
 
   { path: 'lista-estudiantes', component: ListaEstudiantesComponent },
   { path: 'nav-bar', component: NavbarEstComponent },
-  { path: 'nuevo-estudiante', component: NuevoEstudianteComponent }
+  { path: 'nuevo-estudiante', component: NuevoEstudianteComponent },
+  { path: 'lista-profesores', component: ListaProfesoresComponent},
+  { path: 'nav-bar-pro', component: NavbarProComponent},
+  { path: 'nuevo-profesor', component: NuevoProfesorComponent }
+
 
 
 ];
