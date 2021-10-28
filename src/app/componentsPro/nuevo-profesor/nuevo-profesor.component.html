@@ -1,15 +1,17 @@
-<app-navbar-est></app-navbar-est>
+<app-navbar-pro></app-navbar-pro>
+<link href="/src/app/componentsPro/nuevo-profesor/nuevo-profesor.component.css" rel="stylesheet" type="text/css">
 <div class="container pt-4">
   <div class="row">
     <div class="col col-lg-6 offset-lg-3">
       <div class="card text-center">
         <div class="card-body">
           <h3>Agregar Profesor</h3>
-          <span style="color: black;" *ngIf="enviado && createProfesor.invalid "> Todos los campos son requeridos. </span>
+          <span  style="color: black;" *ngIf="enviado && createProfesor.invalid "> Todos los campos son requeridos. </span>
           <form action="" [formGroup]="createProfesor" (ngSubmit)="agregarProfesor()">
             <div class="row">
               <div class="col">
-                <input class="form-control" type="text" formControlName="nombre" placeholder="Nombre">
+
+                <input  class="form-control" type="text" formControlName="nombre" placeholder="Nombre">
               </div>
               <div class="col">
                 <input class="form-control" type="number" formControlName="edad" placeholder="edad">

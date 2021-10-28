@@ -1,0 +1,13 @@
+div, ul, table, form {
+  font-size: 24px;
+  width: 1000px;
+  justify-content: center;
+
+}
+input{
+
+  font-size: 24px;
+  width: 1000px;
+  height: 70px;
+  justify-content: center;
+}
